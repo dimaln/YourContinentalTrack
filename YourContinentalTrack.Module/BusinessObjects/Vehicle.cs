@@ -30,11 +30,5 @@ namespace YourContinentalTrack.Module.BusinessObjects
             get { return _name; }
             set { SetPropertyValue(nameof(Name), ref _name, value); }
         }
-
-        [Association("Drivers-Vihecles")]
-        public XPCollection<Driver> Drivers
-        {
-            get { return GetCollection<Driver>(nameof(Drivers)); }
-        }
     }
 }

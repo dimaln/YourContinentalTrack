@@ -31,10 +31,10 @@ namespace YourContinentalTrack.Module.BusinessObjects
             set { SetPropertyValue(nameof(LastName), ref _lastName, value); }
         }
 
-        [Association("Drivers-Vihecles")]
-        public XPCollection<Vehicle> Vehicles
+        [Association("Drivers-ViheclesLinks")]
+        public XPCollection<VehicleLink> Vehicles
         {
-            get { return GetCollection<Vehicle>(nameof(Vehicles)); }
+            get { return GetCollection<VehicleLink>(nameof(Vehicles)); }
         }
     }
 }
